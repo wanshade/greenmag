@@ -222,7 +222,7 @@ export default function ArticlePage() {
 
       {/* Featured Image */}
       {article.thumbnail && (
-        <div className="max-w-4xl mx-auto px-4 mb-8">
+        <div className="max-w-4xl mx-auto px-4 mb-8 mt-10">
           <div className="relative h-96 w-full rounded-lg overflow-hidden">
             <Image
               src={article.thumbnail}
@@ -272,8 +272,9 @@ export default function ArticlePage() {
           />
         </div>
       </div>
-
-      <Footer />
+      <div className="mt-50">
+        <Footer />
+      </div>
     </div>
   );
 }
